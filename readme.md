@@ -30,7 +30,7 @@
     - [__(F) Saving the project__](#f-saving-the-project)
     - [__(G) Deployment as web demo app__](#g-deployment-as-web-demo-app)
   - [__Licance__](#license)
-  - [__Connections__](#connections)
+  - [__Connection Links__](#connection-links)
 
 ## __Brief__ 
 
@@ -509,7 +509,6 @@ Loan_Status | Loan approved (Y/N)
 ## License
 - This project is licensed under the Apache 2.0 License. See the [LICENSE](LICENSE.txt) file for details.
 
-## Connections
 <h1 style="text-align: center;">Connection Links</h1>
 
 <div style="text-align: center;">
