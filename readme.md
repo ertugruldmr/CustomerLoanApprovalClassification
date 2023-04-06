@@ -56,7 +56,7 @@
         <a target="_blank" href="https://github.com/ertugruldmr/CustomerLoanApprovalClassification/blob/main/study.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png">[Traning pipeline] source on GitHub</a>
       </td>
     <td>
-        <a target="_blank" href="https://colab.research.google.com/drive/1PrzbpM2FFUA-Cudv9ULtzZ0-DoFqEHkb"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg">[Traning pipeline] Run in Colab</a>
+        <a target="_blank" href="https://colab.research.google.com/drive/1PrzbpM2FFUA-Cudv9ULtzZ0-DoFqEHkb"><img src="https://www.tensorflow.org/images/colab_logo_32px.png">[Traning pipeline] Run in Colab</a>
       </td>
     </tr>
   </table>
