@@ -234,7 +234,7 @@ The project aimed classifying the species using the features. The study includes
     │   ├── app.py
     │   ├── cat_encods.json
     │   ├── component_configs.json
-    │   ├── decision_tree_model.sav
+    │   ├── lgbm_model.sav
     │   └── requirements.txt
     ├── docs
     │   └── images
