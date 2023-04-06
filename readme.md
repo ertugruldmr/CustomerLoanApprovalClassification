@@ -50,17 +50,18 @@
         <a target="_blank" href="https://ertugruldemir-customerloanapprovalclassification.hf.space"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" height="30">[Demo app] HF Space</a>
       </td>
       <td>
-        <a target="_blank" href=""><img src="https://www.tensorflow.org/images/colab_logo_32px.png">[Demo app] Run in Colab</a>
+        <a target="_blank" href="https://colab.research.google.com/drive/1gwz33viKyZeuPDHwM44rcNHIyhjifd3Z#scrollTo=3zGq_05wOb4R"><img src="https://www.tensorflow.org/images/colab_logo_32px.png">[Demo app] Run in Colab</a>
       </td>
       <td>
-        <a target="_blank" href=""><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png">[Traning pipeline] source on GitHub</a>
+        <a target="_blank" href="https://github.com/ertugruldmr/CustomerLoanApprovalClassification/blob/main/study.ipynb"><img src="https://www.tensorflow.org/images/GitHub-Mark-32px.png">[Traning pipeline] source on GitHub</a>
       </td>
     <td>
-        <a target="_blank" href="">[Traning pipeline] Run in Colab</a>
+        <a target="_blank" href="https://colab.research.google.com/drive/1PrzbpM2FFUA-Cudv9ULtzZ0-DoFqEHkb"><img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg">[Traning pipeline] Run in Colab</a>
       </td>
     </tr>
   </table>
 </div>
+
 
 
 - Description
@@ -166,7 +167,7 @@ The project aimed classifying the species using the features. The study includes
 
 |   | accuracy | precision | recall | f1_score |
 |---|---------|-----------|--------|----------|
-| dt	 | 0.813008 | 0.813008 | 0.813008 | 0.813008 |
+| lgbm | 0.813008 | 0.813008 | 0.813008 | 0.813008 |
 </div> 
 
 - Model tuning results are below.
@@ -176,12 +177,12 @@ The project aimed classifying the species using the features. The study includes
 <tc><td>
 
 
-| Model | MaxError | MeanAbsoluteError | MeanAbsolutePercentageError |   MSE  |  RMSE  |   MAE  |     R2    | ExplainedVariance |
-|:---------:|:--------:|:----------------:|:---------------------------:|:------:|:------:|:------:|:---------:|:-----------------:|
-|  lin_reg  | 0.316456 |      0.195122     |           0.195122          |  0.0   |  0.0   |   inf  |   0.150748 |      0.441726      |
-|   l1_reg  |   0.0    |        0.0        |             inf             | 0.195122 | 0.441726 | 0.195122|   0.150748 |  3.164557e-01     |
-|   l2_reg  |   0.0    |        0.0        |             inf             | 0.357724 | 0.598100| 0.357724|  -0.556962 | -2.220446e-16     |
-| enet_reg  |   0.0    |        0.0        |             inf             | 0.195122 | 0.441726| 0.195122|   0.150748 |  3.164557e-01     |
+|      Model     | MaxError | MeanAbsoluteError | MeanAbsolutePercentageError | MSE     | RMSE    | MAE     | R2       | ExplainedVariance |
+|:--------------:|---------|------------------|------------------------------|---------|---------|---------|----------|-------------------|
+|    lin_reg     | 0.227609| 0.170732         | 0.170732                     | 1.0     | 0.0     | inf     | 0.130303 | 0.413197          |
+|    l1_reg      | 1.0     | 0.0              | inf                          | 0.170732| 0.413197| 0.170732| 0.130303 | 0.227609          |
+|    l2_reg      | 0.0     | 0.0              | inf                          | 0.268293| 0.517970| 0.268293| -0.366667| 0.0               |
+|    enet_reg    | 1.0     | 0.0              | inf                          | 0.170732| 0.413197| 0.170732| 0.130303 | 0.227609          |
 
 
 </td><td> </table>
@@ -193,13 +194,13 @@ The project aimed classifying the species using the features. The study includes
 
 <tr><td>
 
-| Model | accuracy   | precision  | recall     | f1_score   |
-|--------|------------|------------|------------|------------|
-| loj_reg| 0.804878   | 0.804878   | 0.804878   | 0.804878   |
-| nb_params| 0.804878  | 0.804878   | 0.804878   | 0.804878   |
-| knn    | 0.715447   | 0.715447   | 0.715447   | 0.715447   |
-| svc    | 0.804878   | 0.804878   | 0.804878   | 0.804878   |
-| dt     | 0.813008   | 0.813008   | 0.813008   | 0.813008   |
+|   Model | accuracy | precision | recall   | f1_score |
+|---------|----------|-----------|----------|----------|
+| loj_reg | 0.829268 | 0.829268  | 0.829268 | 0.829268 |
+| nb_params | 0.829268 | 0.829268  | 0.829268 | 0.829268 |
+| knn     | 0.772358 | 0.772358  | 0.772358 | 0.772358 |
+| svc     | 0.829268 | 0.829268  | 0.829268 | 0.829268 |
+| dt      | 0.796748 | 0.796748  | 0.796748 | 0.796748 |
 
 
 
@@ -207,13 +208,13 @@ The project aimed classifying the species using the features. The study includes
 <div style="flex: 50%; padding-left: 175px;">
 
 
-|  Model | accuracy   | precision  | recall     | f1_score   |
-|:--:|:----------:|:----------:|:----------:|:----------:|
-| rf   | 0.804878 | 0.804878 | 0.804878 | 0.804878 |
-| gbc  | 0.804878 | 0.804878 | 0.804878 | 0.804878 |
-| xgbc | 0.796748 | 0.796748 | 0.796748 | 0.796748 |
-| lgbm | 0.804878 | 0.804878 | 0.804878 | 0.804878 |
-| cb   | 0.804878 | 0.804878 | 0.804878 | 0.804878 |
+| Model | Accuracy | Precision | Recall | F1 Score |
+|-------|----------|-----------|--------|----------|
+| rf | 0.821138 | 0.821138 | 0.821138 | 0.821138 |
+| gbc | 0.821138 | 0.821138 | 0.821138 | 0.821138 |
+| xgbc | 0.780488 | 0.780488 | 0.780488 | 0.780488 |
+| lgbm | 0.813008 | 0.813008 | 0.813008 | 0.813008 |
+| cb | 0.829268 | 0.829268 | 0.829268 | 0.829268 |
 
 
 </div>
